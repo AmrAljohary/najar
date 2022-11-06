@@ -18,3 +18,11 @@ arrwo.onclick = function () {
   });
 };
 //  end of arwwo
+let nav = document.getElementById("hide");
+function myFunc() {
+  nav.classList.toggle("hide");
+}
+nav.onblur = function () {
+  nav.classList.remove("hide");
+  box.classList.remove("input-search");
+};
